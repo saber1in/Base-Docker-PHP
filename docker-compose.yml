@@ -3,7 +3,7 @@ services:
     db:
         image: mysql
         environment:
-            MYSQL_DATABASE: PortfolioData
+            MYSQL_DATABASE: your_data_base
             MYSQL_PASSWORD: your_pass_to_db
             MYSQL_ROOT_PASSWORD: your_pass_to_db
         volumes:
@@ -29,7 +29,7 @@ services:
         ports:
             - "8000:80"
         environment:
-            MYSQL_USER: root
+            MYSQL_USER: your_username
             MYSQL_PASSWORD: your_pass_to_db
             MYSQL_ROOT_PASSWORD: your_pass_to_db
 volumes:
